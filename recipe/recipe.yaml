@@ -1,5 +1,5 @@
 context:
-  version: 2.1.0
+  version: "2.1.1"
 
 package:
   name: voyager
@@ -7,10 +7,10 @@ package:
 
 source:
   - url: https://github.com/spotify/voyager/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 5f8d687f310b67e9661bb6226b68eea4c8d0c5d48f5866be11c8a37884ce6ed1
+    sha256: b04306f63b3fdd7aada8ca2bd74d53ec6b0746623e6b69f3820c2c412c75a23e
 
 build:
-  number: 1
+  number: 0
   script:
     - cd python
     - ${{ PYTHON }} -m pip install . -vv
